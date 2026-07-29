@@ -3,50 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Anatomy Lab | Simulación anatómica</title>
+  <title>Anatomy Lab | Anatomical Simulation</title>
   <meta name="description" content="Anatomy Lab by Duarte & Barros: modelos anatómicos, simulación, formación e investigación aplicada.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
   <header class="header">
     <a href="#inicio" class="logo">
       <span class="logo-mark">AL</span>
-      <span class="logo-text"><strong>ANATOMY</strong> LAB<small>by Duarte & Barros</small></span>
+      <span class="logo-text"><strong>ANATOMY</strong> LAB<small>by Duarte &amp; Barros</small></span>
     </a>
     <nav class="nav">
-      <a href="#soluciones">Soluciones</a>
-      <a href="#producto">Producto fundador</a>
-      <a href="#aplicaciones">Aplicaciones</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#soluciones">Solutions</a>
+      <a href="#fundadores">Founders</a>
+      <a href="#producto">Founding Product</a>
+      <a href="#aplicaciones">Applications</a>
+      <a href="#contacto">Contact</a>
     </nav>
-    <a class="header-cta" href="#contacto">Hablemos</a>
+    <a class="header-cta" href="#contacto">Let’s talk</a>
     <button class="menu-btn" aria-label="Abrir menú"><span></span><span></span></button>
   </header>
 
   <div class="mobile-nav">
-    <a href="#soluciones">Soluciones</a>
-    <a href="#producto">Producto fundador</a>
-    <a href="#aplicaciones">Aplicaciones</a>
-    <a href="#contacto">Contacto</a>
+    <a href="#soluciones">Solutions</a>
+    <a href="#fundadores">Founders</a>
+    <a href="#producto">Founding Product</a>
+    <a href="#aplicaciones">Applications</a>
+    <a href="#contacto">Contact</a>
   </div>
 
   <main>
-    <section class="hero" id="inicio">
-      <img src="assets/anatomy-layers.webp?v=7" alt="Modelo anatómico facial por capas" class="hero-bg" fetchpriority="high">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
+    <section class="hero section" id="inicio">
+      <div class="hero-copy">
         <p class="eyebrow">THE FUTURE OF</p>
         <h1>ANATOMICAL<br>SIMULATION</h1>
-        <h2>Tecnología. Anatomía. Educación. Sin límites.</h2>
-        <p class="hero-text">Anatomy Lab es la unidad de negocio de Duarte & Barros orientada al desarrollo de modelos anatómicos, simuladores, formación y proyectos de innovación aplicada para educación en salud.</p>
+        <h2>Technology. Anatomy. Education. Without limits.</h2>
+        <p class="hero-text">Anatomy Lab es la unidad de negocio de Duarte &amp; Barros dedicada al desarrollo de modelos anatómicos, simuladores, formación y proyectos de innovación aplicada para educación en salud.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#soluciones">Explorar Anatomy Lab</a>
-          <a class="btn btn-secondary" href="#contacto">Presentar un proyecto</a>
+          <a class="btn btn-primary" href="#soluciones">Explore Anatomy Lab</a>
+          <a class="btn btn-secondary" href="#contacto">Start a project</a>
         </div>
       </div>
+
+      <div class="hero-visual">
+        <div class="hero-visual-shell">
+          <img src="assets/anatomy-front.webp?v=9" alt="Modelo anatómico facial completo" class="hero-model" fetchpriority="high">
+        </div>
+      </div>
+
       <div class="hero-cards">
         <article><span>01</span><strong>Anatomy Models</strong><p>Modelos anatómicos hiperrealistas y soluciones 3D.</p></article>
         <article><span>02</span><strong>Anatomy Simulation</strong><p>Simuladores para entrenamiento clínico y educativo.</p></article>
@@ -56,9 +63,9 @@
     </section>
 
     <section class="intro section">
-      <div class="section-tag">ANATOMY LAB / UNIDAD DE NEGOCIO</div>
+      <div class="section-tag">ANATOMY LAB / BUSINESS UNIT</div>
       <div class="intro-grid">
-        <h2>Convertimos anatomía en experiencias de aprendizaje, práctica e innovación.</h2>
+        <h2>From anatomical knowledge to real learning experiences.</h2>
         <div>
           <p>Integramos anatomía, simulación, impresión 3D, ecografía, realidad extendida e inteligencia artificial para crear soluciones con valor educativo y clínico.</p>
           <p>Trabajamos con universidades, centros de simulación, clínicas, grupos de investigación y empresas del sector salud.</p>
@@ -66,83 +73,114 @@
       </div>
     </section>
 
+    <section class="founders section" id="fundadores">
+      <div class="section-head">
+        <div>
+          <span class="section-tag">FOUNDERS</span>
+          <h2>Science, clinical practice and innovation behind the project.</h2>
+        </div>
+        <p>Anatomy Lab nace de la experiencia docente, clínica e investigativa de sus fundadores, con una visión clara: transformar la forma en que se aprende y se entrena la anatomía.</p>
+      </div>
+      <div class="founders-grid">
+        <article class="founder-card">
+          <span class="founder-kicker">CO-FOUNDER</span>
+          <h3>Andrés Duarte</h3>
+          <p>Odontólogo, docente universitario, conferencista e innovador en simulación anatómica, tecnología aplicada y formación clínica.</p>
+        </article>
+        <article class="founder-card">
+          <span class="founder-kicker">CO-FOUNDER</span>
+          <h3>Adriana Barros</h3>
+          <p>Médica, docente universitaria e investigadora en anatomía, morfofisiología y educación en ciencias de la salud.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="solutions section" id="soluciones">
       <div class="section-head">
-        <div><span class="section-tag">SOLUCIONES</span><h2>Líneas iniciales de desarrollo</h2></div>
-        <p>Una estructura clara para salir al mercado y empezar conversaciones con instituciones y aliados.</p>
+        <div>
+          <span class="section-tag">CORE PLATFORMS</span>
+          <h2>An ecosystem built to learn, simulate and innovate.</h2>
+        </div>
+        <p>Cuatro líneas conectadas para desarrollar productos, formación, investigación y soluciones de simulación anatómica.</p>
       </div>
       <div class="solutions-grid">
         <article class="solution-card">
-          <img src="assets/anatomy-front.webp?v=7" alt="Modelo anatómico facial frontal" loading="lazy">
+          <div class="solution-image-wrap"><img src="assets/anatomy-front.webp?v=9" alt="Modelo anatómico facial frontal" loading="lazy"></div>
           <div class="solution-copy"><span>01</span><h3>Anatomy Models</h3><p>Modelos anatómicos, prototipos físicos y soluciones personalizadas.</p></div>
         </article>
         <article class="solution-card">
-          <img src="assets/anatomy-profile.webp?v=7" alt="Modelo anatómico facial de perfil" loading="lazy">
+          <div class="solution-image-wrap"><img src="assets/anatomy-profile.webp?v=9" alt="Modelo anatómico facial de perfil" loading="lazy"></div>
           <div class="solution-copy"><span>02</span><h3>Anatomy Simulation</h3><p>Simuladores para enseñanza, entrenamiento y práctica deliberada.</p></div>
         </article>
         <article class="solution-card">
-          <img src="assets/anatomy-layers.webp?v=7" alt="Modelo anatómico facial por capas" loading="lazy">
+          <div class="solution-image-wrap"><img src="assets/anatomy-layers.webp?v=9" alt="Modelo anatómico facial por capas" loading="lazy"></div>
           <div class="solution-copy"><span>03</span><h3>Anatomy Academy</h3><p>Formación y experiencias educativas para universidades y profesionales.</p></div>
         </article>
         <article class="solution-card">
-          <img src="assets/anatomy-front.webp?v=7" alt="Simulación anatómica aplicada" loading="lazy">
+          <div class="solution-image-wrap"><img src="assets/anatomy-layers.webp?v=9" alt="Simulación anatómica aplicada" loading="lazy"></div>
           <div class="solution-copy"><span>04</span><h3>Anatomy Research</h3><p>Investigación aplicada y transferencia hacia productos y educación.</p></div>
         </article>
       </div>
     </section>
 
     <section class="feature section" id="producto">
-      <div class="feature-media"><img src="assets/anatomy-layers.webp?v=7" alt="Simulación facial por capas" loading="lazy"></div>
+      <div class="feature-media feature-panel"><img src="assets/anatomy-layers.webp?v=9" alt="Simulación facial por capas" loading="lazy"></div>
       <div class="feature-copy">
-        <span class="section-tag">PRODUCTO FUNDADOR</span>
-        <h2>Simulación facial por capas.</h2>
-        <p>Una línea con alto potencial para entrenamiento anatómico, comprensión espacial y práctica de procedimientos.</p>
+        <span class="section-tag">FOUNDING PRODUCT</span>
+        <h2>Layered Facial Simulation.</h2>
+        <p>Una plataforma con alto potencial para entrenamiento anatómico, comprensión espacial y práctica de procedimientos.</p>
         <ul>
-          <li>Comprensión de trayectos y referencias faciales.</li>
+          <li>Comprensión de trayectos, planos y referencias faciales.</li>
           <li>Entrenamiento sobre anatomía aplicada.</li>
-          <li>Base para futuras expansiones en simulación.</li>
+          <li>Base para futuras expansiones en simulación médica y odontológica.</li>
         </ul>
       </div>
     </section>
 
     <section class="applications section" id="aplicaciones">
       <div class="section-head">
-        <div><span class="section-tag">APLICACIONES</span><h2>Diseñado para instituciones que quieren enseñar y entrenar mejor.</h2></div>
+        <div>
+          <span class="section-tag">BUILT FOR</span>
+          <h2>Institutions ready to teach and train differently.</h2>
+        </div>
       </div>
       <div class="application-grid">
-        <article><strong>Universidades</strong><p>Experiencias formativas, laboratorios y proyectos académicos.</p></article>
-        <article><strong>Centros de simulación</strong><p>Entrenamiento progresivo, repetible y seguro.</p></article>
-        <article><strong>Clínicas y profesionales</strong><p>Práctica, perfeccionamiento y educación continua.</p></article>
-        <article><strong>Investigación y desarrollo</strong><p>Conceptos, prototipos y soluciones desde la anatomía aplicada.</p></article>
+        <article><strong>Universities</strong><p>Experiencias formativas, laboratorios y proyectos académicos.</p></article>
+        <article><strong>Simulation Centers</strong><p>Entrenamiento progresivo, repetible y seguro.</p></article>
+        <article><strong>Clinics &amp; Professionals</strong><p>Práctica, perfeccionamiento y educación continua.</p></article>
+        <article><strong>Research &amp; Development</strong><p>Conceptos, prototipos y soluciones desde la anatomía aplicada.</p></article>
       </div>
     </section>
 
     <section class="contact section" id="contacto">
       <div class="contact-copy">
         <span class="section-tag">START A PROJECT</span>
-        <h2>Construyamos una solución de simulación anatómica.</h2>
-        <p>Déjanos tu interés y prepararemos el contacto con Anatomy Lab.</p>
+        <h2>Let’s build the next anatomical simulation system.</h2>
+        <p>Cuéntanos qué necesitas desarrollar, enseñar, simular o investigar.</p>
       </div>
-      <form id="contactForm" class="contact-form">
+      <form class="contact-form" id="contactForm">
         <div class="two-cols">
-          <input type="text" id="name" placeholder="Nombre" required>
-          <input type="email" id="email" placeholder="Correo" required>
+          <input id="name" type="text" placeholder="Nombre" required>
+          <input id="email" type="email" placeholder="Correo" required>
         </div>
-        <input type="text" id="organization" placeholder="Institución o empresa">
-        <textarea id="message" placeholder="Describe brevemente el proyecto o necesidad" required></textarea>
-        <button type="submit" class="btn btn-primary">Enviar solicitud</button>
-        <small id="formNote">Al enviar, se abrirá tu cliente de correo.</small>
+        <input id="organization" type="text" placeholder="Institución o empresa">
+        <textarea id="message" placeholder="Describe brevemente tu necesidad o proyecto" required></textarea>
+        <button class="btn btn-primary" type="submit">Start a conversation</button>
+        <small id="formNote">Se abrirá tu cliente de correo con el mensaje listo para enviar.</small>
       </form>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-brand"><span class="logo-mark">AL</span><span><strong>ANATOMY</strong> LAB<small>by Duarte & Barros</small></span></div>
-    <span>Simulación anatómica · Formación · Innovación</span>
+    <div class="footer-brand">
+      <span class="logo-mark">AL</span>
+      <span><strong>ANATOMY</strong> LAB<small>by Duarte &amp; Barros</small></span>
+    </div>
+    <span>Anatomical Simulation · Education · Innovation</span>
     <span>Colombia / Global</span>
     <span>© <b id="year"></b></span>
   </footer>
 
-  <script src="script.js?v=7"></script>
+  <script src="script.js?v=9"></script>
 </body>
 </html>
