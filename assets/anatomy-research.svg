@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Investigación anatómica, ecografía y análisis digital">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050608"/><stop offset=".58" stop-color="#111720"/><stop offset="1" stop-color="#06070a"/></linearGradient>
+    <radialGradient id="blue"><stop stop-color="#3b78d8" stop-opacity=".25"/><stop offset="1" stop-color="#3b78d8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gold"><stop stop-color="#d7ad5a" stop-opacity=".20"/><stop offset="1" stop-color="#d7ad5a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#162231"/><stop offset="1" stop-color="#080b10"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#000" flood-opacity=".7"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1190" cy="260" r="390" fill="url(#blue)"/><circle cx="470" cy="610" r="360" fill="url(#gold)"/>
+  <g opacity=".18" stroke="#89a8cf" stroke-width="1"><path d="M0 140H1600M0 280H1600M0 420H1600M0 560H1600M0 700H1600"/><path d="M140 0V900M360 0V900M580 0V900M800 0V900M1020 0V900M1240 0V900M1460 0V900"/></g>
+  <g transform="translate(84 110)" filter="url(#shadow)">
+    <rect x="0" y="0" width="900" height="620" rx="30" fill="#090c11" stroke="#d7ad5a" stroke-opacity=".32"/>
+    <rect x="32" y="34" width="836" height="480" rx="18" fill="url(#screen)" stroke="#3d526c"/>
+    <g opacity=".22" stroke="#8da6c5"><path d="M72 92H828M72 158H828M72 224H828M72 290H828M72 356H828M72 422H828"/><path d="M120 72V480M220 72V480M320 72V480M420 72V480M520 72V480M620 72V480M720 72V480"/></g>
+    <path d="M65 330C115 301 153 267 203 288C251 309 279 390 334 361C391 331 423 215 482 233C548 252 552 381 622 365C687 350 714 253 823 281" fill="none" stroke="#d7ad5a" stroke-width="5" filter="url(#glow)"/>
+    <path d="M65 373C118 357 161 344 209 361C264 380 295 425 351 408C412 389 448 313 506 331C568 351 598 424 661 409C721 395 763 336 823 347" fill="none" stroke="#4f8edb" stroke-width="3" opacity=".9"/>
+    <g transform="translate(105 105)">
+      <path d="M183 31C102 37 57 98 51 181C44 266 70 348 119 421C142 456 164 488 188 516C212 488 234 456 257 421C306 348 331 266 324 181C318 98 272 37 183 31Z" fill="none" stroke="#cfd8e6" stroke-width="2"/>
+      <path d="M78 219C116 188 155 184 180 211M198 211C224 184 263 188 301 219" fill="none" stroke="#8db5e5" stroke-width="2"/>
+      <path d="M186 205C176 263 176 311 190 335C200 350 218 349 227 337" fill="none" stroke="#8db5e5" stroke-width="2"/>
+      <path d="M130 385C164 406 210 406 246 385" fill="none" stroke="#d7ad5a" stroke-width="2"/>
+      <g fill="none" stroke="#e35b4c" stroke-width="4" filter="url(#glow)"><path d="M87 270C118 302 137 346 145 410"/><path d="M294 270C263 302 245 346 236 410"/><path d="M145 410C161 378 177 356 190 335"/><path d="M236 410C220 378 205 356 190 335"/></g>
+      <g fill="none" stroke="#e4b84d" stroke-width="2"><path d="M108 263C128 237 145 215 160 184M271 263C251 237 236 215 220 184"/></g>
+    </g>
+    <g fill="#d7ad5a"><circle cx="765" cy="111" r="7"/><circle cx="786" cy="111" r="7" opacity=".55"/><circle cx="807" cy="111" r="7" opacity=".22"/></g>
+    <g font-family="Inter,Arial" fill="#9eb0c6" font-size="18"><text x="62" y="560">DOPPLER / MORPHOLOGY / 3D RECONSTRUCTION</text><text x="730" y="560">LIVE DATA</text></g>
+  </g>
+  <g transform="translate(1020 150)" filter="url(#shadow)">
+    <rect width="470" height="260" rx="25" fill="#0b1017" stroke="#63748b" stroke-opacity=".45"/>
+    <g transform="translate(35 35)">
+      <circle cx="95" cy="92" r="82" fill="#111927" stroke="#47668f"/>
+      <g fill="none" stroke="#67a1e7" stroke-width="2" opacity=".7"><circle cx="95" cy="92" r="57"/><circle cx="95" cy="92" r="30"/><path d="M12 92H178M95 9V175M36 33L154 151M154 33L36 151"/></g>
+      <circle cx="95" cy="92" r="10" fill="#d7ad5a" filter="url(#glow)"/>
+      <g transform="translate(225 15)" fill="none" stroke="#d7ad5a" stroke-width="3"><path d="M0 122C25 90 42 162 68 122C96 80 114 163 142 122C169 83 191 145 204 111"/></g>
+      <g font-family="Inter,Arial" fill="#edf2f8"><text x="225" y="55" font-size="19" letter-spacing="3">MICROSCOPY</text><text x="225" y="88" font-size="30">TISSUE ANALYSIS</text><text x="225" y="183" font-size="15" fill="#92a1b3">Pattern recognition / validation</text></g>
+    </g>
+  </g>
+  <g transform="translate(1040 475)" filter="url(#shadow)">
+    <rect width="430" height="250" rx="25" fill="#0b1017" stroke="#d7ad5a" stroke-opacity=".34"/>
+    <g opacity=".25" stroke="#7794b7"><path d="M35 55H395M35 105H395M35 155H395M35 205H395"/><path d="M85 30V220M155 30V220M225 30V220M295 30V220M365 30V220"/></g>
+    <g fill="none" stroke="#4f8edb" stroke-width="3"><path d="M57 188L118 135L177 159L240 83L302 112L371 52"/></g>
+    <g fill="#d7ad5a" filter="url(#glow)"><circle cx="57" cy="188" r="7"/><circle cx="118" cy="135" r="7"/><circle cx="177" cy="159" r="7"/><circle cx="240" cy="83" r="7"/><circle cx="302" cy="112" r="7"/><circle cx="371" cy="52" r="7"/></g>
+    <text x="36" y="28" font-family="Inter,Arial" font-size="16" letter-spacing="4" fill="#d7ad5a">ANATOMICAL DATA</text>
+  </g>
+  <text x="86" y="82" font-family="Inter,Arial" font-size="19" letter-spacing="6" fill="#d7ad5a">ANATOMY RESEARCH / EVIDENCE ENGINE</text>
+</svg>
