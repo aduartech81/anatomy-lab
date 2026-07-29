@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Sistema de modelos anatómicos por capas">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07090d"/><stop offset=".52" stop-color="#10141b"/><stop offset="1" stop-color="#050608"/>
+    </linearGradient>
+    <radialGradient id="halo"><stop offset="0" stop-color="#d7ad5a" stop-opacity=".22"/><stop offset="1" stop-color="#d7ad5a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d3a07e"/><stop offset="1" stop-color="#5a2a27"/></linearGradient>
+    <linearGradient id="muscle" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bc5a45"/><stop offset="1" stop-color="#4c1718"/></linearGradient>
+    <linearGradient id="bone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8ddc4"/><stop offset="1" stop-color="#86785e"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="28" stdDeviation="24" flood-color="#000" flood-opacity=".75"/></filter>
+    <path id="profile" d="M244 136 C184 145 148 199 143 273 C139 331 153 379 181 418 C203 449 223 474 240 506 C255 535 263 578 260 629 L374 629 C373 588 370 558 380 529 C392 492 421 470 453 447 C488 422 509 390 513 354 C516 326 506 303 483 285 C457 265 446 242 440 207 C429 146 346 124 244 136 Z"/>
+    <clipPath id="headClip"><use href="#profile"/></clipPath>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="800" cy="430" r="420" fill="url(#halo)"/>
+  <g opacity=".22" stroke="#d7ad5a" stroke-width="1">
+    <path d="M0 160H1600M0 300H1600M0 440H1600M0 580H1600M0 720H1600"/>
+    <path d="M160 0V900M400 0V900M640 0V900M880 0V900M1120 0V900M1360 0V900"/>
+  </g>
+  <g filter="url(#shadow)">
+    <g transform="translate(40 20)">
+      <use href="#profile" fill="url(#skin)" stroke="#e3b86a" stroke-opacity=".45" stroke-width="2"/>
+      <g clip-path="url(#headClip)" opacity=".48" stroke="#f2d1b7" fill="none">
+        <path d="M183 220C248 170 353 162 431 211M177 286C260 247 354 247 466 293M191 355C267 323 355 332 472 365M212 427C287 399 370 411 444 455"/>
+      </g>
+    </g>
+    <g transform="translate(335 20)">
+      <use href="#profile" fill="url(#muscle)" stroke="#dc8069" stroke-width="2"/>
+      <g clip-path="url(#headClip)" fill="none" stroke="#f0ad8e" stroke-width="5" opacity=".55">
+        <path d="M178 245C250 194 360 181 448 231M175 320C255 275 374 273 485 326M197 402C288 365 381 376 457 429"/>
+        <path d="M228 149C254 236 262 331 246 474M318 136C319 245 333 349 374 475"/>
+      </g>
+      <g fill="none" stroke="#d94d3f" stroke-width="6" filter="url(#glow)"><path d="M205 607C235 531 259 464 302 407C337 360 386 320 454 294"/><path d="M302 407C266 361 241 322 225 274"/></g>
+      <g fill="none" stroke="#3e7fc4" stroke-width="4"><path d="M239 613C277 530 310 467 353 425C390 389 431 366 474 347"/></g>
+      <g fill="none" stroke="#e7b93f" stroke-width="3"><path d="M263 609C304 535 344 483 397 450C432 428 458 411 488 389"/></g>
+    </g>
+    <g transform="translate(630 20)">
+      <use href="#profile" fill="#101419" stroke="#b25548" stroke-width="2"/>
+      <g clip-path="url(#headClip)" fill="none">
+        <g stroke="#da5043" stroke-width="7" filter="url(#glow)"><path d="M211 620C229 533 252 476 294 420C341 357 394 320 469 287"/><path d="M294 420C253 370 225 322 216 259"/><path d="M366 364C397 327 428 300 466 278"/></g>
+        <g stroke="#458bce" stroke-width="4"><path d="M248 620C280 537 313 470 361 425C396 391 432 366 481 344"/><path d="M361 425C331 372 319 322 323 251"/></g>
+        <g stroke="#e5b84c" stroke-width="3"><path d="M275 617C309 544 346 493 397 458C433 434 464 414 492 386"/><path d="M397 458C374 405 371 349 389 292"/></g>
+      </g>
+    </g>
+    <g transform="translate(925 20)">
+      <use href="#profile" fill="url(#bone)" stroke="#f1dfb2" stroke-width="2"/>
+      <g clip-path="url(#headClip)" fill="#17191b" stroke="#493f32" stroke-width="5">
+        <ellipse cx="395" cy="284" rx="40" ry="30"/><ellipse cx="476" cy="336" rx="18" ry="28"/>
+        <path d="M374 350L452 367L432 404L370 397Z"/><path d="M325 173C360 158 410 169 433 203L418 250L348 257L318 218Z"/>
+      </g>
+      <g stroke="#8d7f65" fill="none" stroke-width="4"><path d="M270 168C294 258 300 358 278 475M328 148C338 258 354 366 402 469"/><path d="M217 422C287 450 366 460 435 446"/></g>
+    </g>
+  </g>
+  <g fill="none" stroke="#d7ad5a" stroke-width="2" opacity=".65">
+    <path d="M330 680H365M625 680H660M920 680H955M1215 680H1250"/>
+    <circle cx="347" cy="680" r="7" fill="#d7ad5a"/><circle cx="642" cy="680" r="7" fill="#d7ad5a"/><circle cx="937" cy="680" r="7" fill="#d7ad5a"/><circle cx="1232" cy="680" r="7" fill="#d7ad5a"/>
+  </g>
+  <g font-family="Inter,Arial" fill="#f4f2eb" text-anchor="middle">
+    <text x="347" y="735" font-size="23" letter-spacing="5">SURFACE</text>
+    <text x="642" y="735" font-size="23" letter-spacing="5">MUSCLE</text>
+    <text x="937" y="735" font-size="23" letter-spacing="5">VASCULAR</text>
+    <text x="1232" y="735" font-size="23" letter-spacing="5">SKELETAL</text>
+  </g>
+  <text x="80" y="86" font-family="Inter,Arial" font-size="19" letter-spacing="6" fill="#d7ad5a">ANATOMY MODELS / LAYER SYSTEM</text>
+</svg>
