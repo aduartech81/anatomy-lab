@@ -34,3 +34,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+# Launch scope: static landing with shared imagery; no interactive 3D in this phase.
