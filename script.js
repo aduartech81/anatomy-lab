@@ -6,23 +6,16 @@ const heroImage=document.getElementById('heroAnatomy');
 
 async function loadHeroImage(){
   try{
-    const parts=await Promise.all(
-      Array.from({length:9},(_,index)=>
-        fetch(`assets/hero/${index}.txt`,{cache:'force-cache'}).then(response=>{
-          if(!response.ok) throw new Error(`Hero data ${index} unavailable`);
-          return response.text();
-        })
-      )
-    );
+    const parts=await Promise.all(Array.from({length:9},(_,index)=>fetch(`assets/hero/${index}.txt`,{cache:'force-cache'}).then(response=>{
+      if(!response.ok) throw new Error(`Hero data ${index} unavailable`);
+      return response.text();
+    })));
     heroImage.src=`data:image/webp;base64,${parts.join('').replace(/\s/g,'')}`;
-  }catch(error){
-    console.warn('Anatomical fallback image active.',error);
-  }
+  }catch(error){console.warn('Anatomical fallback image active.',error);}
 }
 loadHeroImage();
 
 window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>24),{passive:true});
-
 menuButton.addEventListener('click',()=>{
   const open=mobileNav.classList.toggle('open');
   document.body.classList.toggle('menu-open',open);
@@ -38,8 +31,7 @@ document.querySelectorAll('.layer-button').forEach(button=>button.addEventListen
   document.querySelectorAll('.layer-button').forEach(item=>item.classList.remove('active'));
   button.classList.add('active');
   const layer=button.dataset.layer;
-  const status=document.getElementById('activeLayerStatus');
-  status.textContent=layerNames[layer];
+  document.getElementById('activeLayerStatus').textContent=layerNames[layer];
   heroImage.dataset.layer=layer;
   heroImage.animate([{opacity:.55,transform:'translateY(-50%) scale(.985)'},{opacity:1,transform:'translateY(-50%) scale(1.02)'}],{duration:360,easing:'ease-out'});
 }));
@@ -59,16 +51,16 @@ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
 }),{threshold:.12,rootMargin:'0px 0px -35px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
-const form=document.getElementById('contactForm');
-form.addEventListener('submit',event=>{
+document.getElementById('contactForm').addEventListener('submit',event=>{
   event.preventDefault();
   const name=document.getElementById('name').value.trim();
   const email=document.getElementById('email').value.trim();
   const organization=document.getElementById('organization').value.trim();
   const type=document.getElementById('projectType').value;
   const message=document.getElementById('message').value.trim();
-  const text=['Hola, quiero presentar una solicitud a Anatomy Lab.','',`Nombre: ${name}`,`Correo: ${email}`,`Institución/empresa: ${organization||'No indicada'}`,`Tipo de proyecto: ${type}`,'','Necesidad:',message].join('\n');
-  document.getElementById('formNote').textContent='Abriendo WhatsApp con la solicitud preparada…';
-  window.open(`https://wa.me/573138872071?text=${encodeURIComponent(text)}`,'_blank','noopener,noreferrer');
+  const subject=encodeURIComponent(`Solicitud Anatomy Lab — ${type}`);
+  const body=encodeURIComponent(['Hola, quiero presentar una solicitud a Anatomy Lab.','',`Nombre: ${name}`,`Correo: ${email}`,`Institución/empresa: ${organization||'No indicada'}`,`Tipo de proyecto: ${type}`,'','Necesidad:',message].join('\n'));
+  document.getElementById('formNote').textContent='Abriendo tu aplicación de correo…';
+  window.location.href=`mailto:aduartech@gmail.com?subject=${subject}&body=${body}`;
 });
 document.getElementById('year').textContent=new Date().getFullYear();
