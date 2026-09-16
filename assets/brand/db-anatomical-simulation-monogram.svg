@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Monograma Duarte &amp; Barros</title>
+  <desc id="desc">Monograma circular DB en negro, marfil y dorado</desc>
+  <rect width="720" height="720" rx="48" fill="#11100E"/>
+  <circle cx="360" cy="360" r="278" fill="none" stroke="#C49A4A" stroke-width="5"/>
+  <circle cx="360" cy="360" r="246" fill="none" stroke="#C49A4A" stroke-width="2" opacity="0.5"/>
+  <text x="360" y="410" text-anchor="middle" fill="#F4EBDD" font-family="DejaVu Serif, Georgia, serif" font-size="196" letter-spacing="-12">D&amp;B</text>
+  <path d="M198 486 H522" fill="none" stroke="#C49A4A" stroke-width="4"/>
+  <text x="360" y="548" text-anchor="middle" fill="#C49A4A" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" letter-spacing="11">ANATOMICAL</text>
+</svg>

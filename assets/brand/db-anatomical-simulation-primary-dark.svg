@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="520" viewBox="0 0 1800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Duarte &amp; Barros Anatomical Simulation</title>
+  <desc id="desc">Primary horizontal signature on dark background</desc>
+  <rect width="1800" height="520" fill="#11100E"/>
+  <g transform="translate(95 78)">
+    <circle cx="178" cy="178" r="166" fill="none" stroke="#C49A4A" stroke-width="3"/>
+    <circle cx="178" cy="178" r="146" fill="none" stroke="#C49A4A" stroke-width="1" opacity="0.45"/>
+    <text x="178" y="211" text-anchor="middle" fill="#F4EBDD" font-family="DejaVu Serif, Georgia, serif" font-size="116" letter-spacing="-8">D&amp;B</text>
+    <path d="M78 260 H278" fill="none" stroke="#C49A4A" stroke-width="2"/>
+    <text x="178" y="302" text-anchor="middle" fill="#C49A4A" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" letter-spacing="7">COLOMBIA</text>
+  </g>
+  <g transform="translate(520 112)">
+    <text x="0" y="94" fill="#F4EBDD" font-family="DejaVu Serif, Georgia, serif" font-size="106" letter-spacing="3">DUARTE &amp; BARROS</text>
+    <path d="M2 145 H1168" fill="none" stroke="#C49A4A" stroke-width="3"/>
+    <text x="4" y="224" fill="#C49A4A" font-family="DejaVu Sans, Arial, sans-serif" font-size="41" letter-spacing="13">ANATOMICAL SIMULATION</text>
+    <text x="4" y="290" fill="#B9B0A4" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" letter-spacing="4">MODELOS ANATÓMICOS Y SIMULACIÓN MÉDICA</text>
+  </g>
+</svg>

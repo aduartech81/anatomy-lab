@@ -1,5 +1,5 @@
-# Anatomy Lab
+# Duarte & Barros Anatomical Simulation
 
-Landing pública de lanzamiento de Anatomy Lab by Duarte & Barros.
+Sitio oficial del portafolio 2026 de Duarte & Barros Anatomical Simulation.
 
 Sitio: https://aduartech81.github.io/anatomy-lab/
